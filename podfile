@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '11.0'
+
+
+target 'SPam' do
+    use_frameworks!
+    pod 'Google-Mobile-Ads-SDK'
+    pod 'libPhoneNumber-iOS', '~> 0.8'
+end
+
+target 'SPamEx' do
+    use_frameworks!
+    pod 'libPhoneNumber-iOS', '~> 0.8'
+end

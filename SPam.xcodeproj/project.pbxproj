@@ -7,15 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E8DFAE90C5FAA0A433A37E /* Pods_SPamEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EC9AE635B429591FDD5157 /* Pods_SPamEx.framework */; };
+		37FA200B66A702C6929071D1 /* Pods_SPam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95C336CDF4B6E3F809A8FF /* Pods_SPam.framework */; };
 		A64E1CA51FCBB4470036D0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CA41FCBB4470036D0FC /* AppDelegate.swift */; };
 		A64E1CA71FCBB4470036D0FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CA61FCBB4470036D0FC /* ViewController.swift */; };
 		A64E1CAA1FCBB4470036D0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64E1CA81FCBB4470036D0FC /* Main.storyboard */; };
 		A64E1CAD1FCBB4470036D0FC /* SPam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CAB1FCBB4470036D0FC /* SPam.xcdatamodeld */; };
 		A64E1CAF1FCBB4470036D0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64E1CAE1FCBB4470036D0FC /* Assets.xcassets */; };
 		A64E1CB21FCBB4470036D0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64E1CB01FCBB4470036D0FC /* LaunchScreen.storyboard */; };
+		A64E1CC11FCBB4EB0036D0FC /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CC01FCBB4EB0036D0FC /* MessageFilterExtension.swift */; };
+		A64E1CC51FCBB4EB0036D0FC /* SPamEx.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A64E1CBE1FCBB4EB0036D0FC /* SPamEx.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A64E1CCA1FCBB50E0036D0FC /* SPam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CAB1FCBB4470036D0FC /* SPam.xcdatamodeld */; };
+		A64E1CD81FCBC3BE0036D0FC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CD71FCBC3BE0036D0FC /* CoreDataStack.swift */; };
+		A64E1CD91FCBC3BE0036D0FC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CD71FCBC3BE0036D0FC /* CoreDataStack.swift */; };
+		A64E1CF41FCBDFDF0036D0FC /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF01FCBDFDF0036D0FC /* Content+CoreDataClass.swift */; };
+		A64E1CF51FCBDFDF0036D0FC /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF01FCBDFDF0036D0FC /* Content+CoreDataClass.swift */; };
+		A64E1CF61FCBDFDF0036D0FC /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF11FCBDFDF0036D0FC /* Content+CoreDataProperties.swift */; };
+		A64E1CF71FCBDFDF0036D0FC /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF11FCBDFDF0036D0FC /* Content+CoreDataProperties.swift */; };
+		A64E1CF81FCBDFDF0036D0FC /* Number+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF21FCBDFDF0036D0FC /* Number+CoreDataClass.swift */; };
+		A64E1CF91FCBDFDF0036D0FC /* Number+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF21FCBDFDF0036D0FC /* Number+CoreDataClass.swift */; };
+		A64E1CFA1FCBDFDF0036D0FC /* Number+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF31FCBDFDF0036D0FC /* Number+CoreDataProperties.swift */; };
+		A64E1CFB1FCBDFDF0036D0FC /* Number+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CF31FCBDFDF0036D0FC /* Number+CoreDataProperties.swift */; };
+		A64E1CFD1FCC06D70036D0FC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E1CFC1FCC06D70036D0FC /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A64E1CC31FCBB4EB0036D0FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64E1C991FCBB4470036D0FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64E1CBD1FCBB4EB0036D0FC;
+			remoteInfo = SPamEx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A64E1CC91FCBB4EB0036D0FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A64E1CC51FCBB4EB0036D0FC /* SPamEx.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		445D91616E45FE7BDF60B302 /* Pods-SPamEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPamEx.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPamEx/Pods-SPamEx.release.xcconfig"; sourceTree = "<group>"; };
+		55EC9AE635B429591FDD5157 /* Pods_SPamEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPamEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647884E73885FDAC8232696F /* Pods-SPam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPam.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPam/Pods-SPam.release.xcconfig"; sourceTree = "<group>"; };
 		A64E1CA11FCBB4470036D0FC /* SPam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64E1CA41FCBB4470036D0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64E1CA61FCBB4470036D0FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +67,21 @@
 		A64E1CAE1FCBB4470036D0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64E1CB11FCBB4470036D0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64E1CB31FCBB4470036D0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64E1CBE1FCBB4EB0036D0FC /* SPamEx.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SPamEx.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64E1CC01FCBB4EB0036D0FC /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		A64E1CC21FCBB4EB0036D0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64E1CD71FCBC3BE0036D0FC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A64E1CDA1FCBC47B0036D0FC /* SPam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPam.entitlements; sourceTree = "<group>"; };
+		A64E1CF01FCBDFDF0036D0FC /* Content+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A64E1CF11FCBDFDF0036D0FC /* Content+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A64E1CF21FCBDFDF0036D0FC /* Number+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A64E1CF31FCBDFDF0036D0FC /* Number+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A64E1CFC1FCC06D70036D0FC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A6F711901FCCF776005ECA3D /* SPamEx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPamEx.entitlements; sourceTree = "<group>"; };
+		A6F711971FCD21FB005ECA3D /* SPam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPam-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFFFADDCCDA854785E7A1AED /* Pods-SPamEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPamEx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPamEx/Pods-SPamEx.debug.xcconfig"; sourceTree = "<group>"; };
+		D2F82DBD54CC3A7438226E58 /* Pods-SPam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPam/Pods-SPam.debug.xcconfig"; sourceTree = "<group>"; };
+		FA95C336CDF4B6E3F809A8FF /* Pods_SPam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +89,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FA200B66A702C6929071D1 /* Pods_SPam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64E1CBB1FCBB4EB0036D0FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E8DFAE90C5FAA0A433A37E /* Pods_SPamEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269A1C752E9FD06235584F50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2F82DBD54CC3A7438226E58 /* Pods-SPam.debug.xcconfig */,
+				647884E73885FDAC8232696F /* Pods-SPam.release.xcconfig */,
+				AFFFADDCCDA854785E7A1AED /* Pods-SPamEx.debug.xcconfig */,
+				445D91616E45FE7BDF60B302 /* Pods-SPamEx.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A64E1C981FCBB4470036D0FC = {
 			isa = PBXGroup;
 			children = (
+				A6F711971FCD21FB005ECA3D /* SPam-Bridging-Header.h */,
 				A64E1CA31FCBB4470036D0FC /* SPam */,
+				A64E1CBF1FCBB4EB0036D0FC /* SPamEx */,
 				A64E1CA21FCBB4470036D0FC /* Products */,
+				269A1C752E9FD06235584F50 /* Pods */,
+				ED51E72E7ED2D78D6EEDC4C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A64E1CA11FCBB4470036D0FC /* SPam.app */,
+				A64E1CBE1FCBB4EB0036D0FC /* SPamEx.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +139,49 @@
 		A64E1CA31FCBB4470036D0FC /* SPam */ = {
 			isa = PBXGroup;
 			children = (
+				A64E1CDA1FCBC47B0036D0FC /* SPam.entitlements */,
+				A64E1CB91FCBB4B50036D0FC /* CoreData */,
 				A64E1CA41FCBB4470036D0FC /* AppDelegate.swift */,
 				A64E1CA61FCBB4470036D0FC /* ViewController.swift */,
 				A64E1CA81FCBB4470036D0FC /* Main.storyboard */,
 				A64E1CAE1FCBB4470036D0FC /* Assets.xcassets */,
 				A64E1CB01FCBB4470036D0FC /* LaunchScreen.storyboard */,
 				A64E1CB31FCBB4470036D0FC /* Info.plist */,
-				A64E1CAB1FCBB4470036D0FC /* SPam.xcdatamodeld */,
+				A64E1CFC1FCC06D70036D0FC /* SettingViewController.swift */,
 			);
 			path = SPam;
+			sourceTree = "<group>";
+		};
+		A64E1CB91FCBB4B50036D0FC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A64E1CF01FCBDFDF0036D0FC /* Content+CoreDataClass.swift */,
+				A64E1CF11FCBDFDF0036D0FC /* Content+CoreDataProperties.swift */,
+				A64E1CF21FCBDFDF0036D0FC /* Number+CoreDataClass.swift */,
+				A64E1CF31FCBDFDF0036D0FC /* Number+CoreDataProperties.swift */,
+				A64E1CAB1FCBB4470036D0FC /* SPam.xcdatamodeld */,
+				A64E1CD71FCBC3BE0036D0FC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A64E1CBF1FCBB4EB0036D0FC /* SPamEx */ = {
+			isa = PBXGroup;
+			children = (
+				A6F711901FCCF776005ECA3D /* SPamEx.entitlements */,
+				A64E1CC01FCBB4EB0036D0FC /* MessageFilterExtension.swift */,
+				A64E1CC21FCBB4EB0036D0FC /* Info.plist */,
+			);
+			path = SPamEx;
+			sourceTree = "<group>";
+		};
+		ED51E72E7ED2D78D6EEDC4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA95C336CDF4B6E3F809A8FF /* Pods_SPam.framework */,
+				55EC9AE635B429591FDD5157 /* Pods_SPamEx.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +191,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64E1CB61FCBB4470036D0FC /* Build configuration list for PBXNativeTarget "SPam" */;
 			buildPhases = (
+				428CF56DA6A82C43F9E402E6 /* [CP] Check Pods Manifest.lock */,
 				A64E1C9D1FCBB4470036D0FC /* Sources */,
 				A64E1C9E1FCBB4470036D0FC /* Frameworks */,
 				A64E1C9F1FCBB4470036D0FC /* Resources */,
+				A64E1CC91FCBB4EB0036D0FC /* Embed App Extensions */,
+				7A28785697EA396118F897ED /* [CP] Embed Pods Frameworks */,
+				CBAF409CE3F36D1701E117C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A64E1CC41FCBB4EB0036D0FC /* PBXTargetDependency */,
 			);
 			name = SPam;
 			productName = SPam;
 			productReference = A64E1CA11FCBB4470036D0FC /* SPam.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A64E1CBD1FCBB4EB0036D0FC /* SPamEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64E1CC61FCBB4EB0036D0FC /* Build configuration list for PBXNativeTarget "SPamEx" */;
+			buildPhases = (
+				E539223B06E779BEEF5E027C /* [CP] Check Pods Manifest.lock */,
+				A64E1CBA1FCBB4EB0036D0FC /* Sources */,
+				A64E1CBB1FCBB4EB0036D0FC /* Frameworks */,
+				A64E1CBC1FCBB4EB0036D0FC /* Resources */,
+				4BA9C14E5121333D18FCDEFF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPamEx;
+			productName = SPamEx;
+			productReference = A64E1CBE1FCBB4EB0036D0FC /* SPamEx.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +241,20 @@
 					A64E1CA01FCBB4470036D0FC = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A64E1CBD1FCBB4EB0036D0FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -117,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				A64E1CA01FCBB4470036D0FC /* SPam */,
+				A64E1CBD1FCBB4EB0036D0FC /* SPamEx */,
 			);
 		};
 /* End PBXProject section */
@@ -132,7 +288,101 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A64E1CBC1FCBB4EB0036D0FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		428CF56DA6A82C43F9E402E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BA9C14E5121333D18FCDEFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPamEx/Pods-SPamEx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A28785697EA396118F897ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SPam/Pods-SPam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPam/Pods-SPam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAF409CE3F36D1701E117C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPam/Pods-SPam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E539223B06E779BEEF5E027C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPamEx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A64E1C9D1FCBB4470036D0FC /* Sources */ = {
@@ -140,12 +390,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64E1CA71FCBB4470036D0FC /* ViewController.swift in Sources */,
+				A64E1CF81FCBDFDF0036D0FC /* Number+CoreDataClass.swift in Sources */,
 				A64E1CAD1FCBB4470036D0FC /* SPam.xcdatamodeld in Sources */,
+				A64E1CF61FCBDFDF0036D0FC /* Content+CoreDataProperties.swift in Sources */,
+				A64E1CD81FCBC3BE0036D0FC /* CoreDataStack.swift in Sources */,
+				A64E1CFD1FCC06D70036D0FC /* SettingViewController.swift in Sources */,
 				A64E1CA51FCBB4470036D0FC /* AppDelegate.swift in Sources */,
+				A64E1CFA1FCBDFDF0036D0FC /* Number+CoreDataProperties.swift in Sources */,
+				A64E1CF41FCBDFDF0036D0FC /* Content+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64E1CBA1FCBB4EB0036D0FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64E1CD91FCBC3BE0036D0FC /* CoreDataStack.swift in Sources */,
+				A64E1CF51FCBDFDF0036D0FC /* Content+CoreDataClass.swift in Sources */,
+				A64E1CCA1FCBB50E0036D0FC /* SPam.xcdatamodeld in Sources */,
+				A64E1CC11FCBB4EB0036D0FC /* MessageFilterExtension.swift in Sources */,
+				A64E1CF91FCBDFDF0036D0FC /* Number+CoreDataClass.swift in Sources */,
+				A64E1CFB1FCBDFDF0036D0FC /* Number+CoreDataProperties.swift in Sources */,
+				A64E1CF71FCBDFDF0036D0FC /* Content+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A64E1CC41FCBB4EB0036D0FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64E1CBD1FCBB4EB0036D0FC /* SPamEx */;
+			targetProxy = A64E1CC31FCBB4EB0036D0FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A64E1CA81FCBB4470036D0FC /* Main.storyboard */ = {
@@ -276,14 +554,18 @@
 		};
 		A64E1CB71FCBB4470036D0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F82DBD54CC3A7438226E58 /* Pods-SPam.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPam/SPam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WM5342TRW6;
 				INFOPLIST_FILE = SPam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = team.gguby.spam.SPam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPam-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +573,54 @@
 		};
 		A64E1CB81FCBB4470036D0FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647884E73885FDAC8232696F /* Pods-SPam.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPam/SPam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WM5342TRW6;
 				INFOPLIST_FILE = SPam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = team.gguby.spam.SPam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPam-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A64E1CC71FCBB4EB0036D0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFFADDCCDA854785E7A1AED /* Pods-SPamEx.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SPamEx/SPamEx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM5342TRW6;
+				INFOPLIST_FILE = SPamEx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team.gguby.spam.SPam.SPamEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPam-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A64E1CC81FCBB4EB0036D0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445D91616E45FE7BDF60B302 /* Pods-SPamEx.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SPamEx/SPamEx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM5342TRW6;
+				INFOPLIST_FILE = SPamEx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = team.gguby.spam.SPam.SPamEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPam-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +643,15 @@
 			buildConfigurations = (
 				A64E1CB71FCBB4470036D0FC /* Debug */,
 				A64E1CB81FCBB4470036D0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64E1CC61FCBB4EB0036D0FC /* Build configuration list for PBXNativeTarget "SPamEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64E1CC71FCBB4EB0036D0FC /* Debug */,
+				A64E1CC81FCBB4EB0036D0FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

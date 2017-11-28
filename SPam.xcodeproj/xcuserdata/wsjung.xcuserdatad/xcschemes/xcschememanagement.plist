@@ -7,7 +7,25 @@
 		<key>SPam.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>SPamEx.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A64E1CA01FCBB4470036D0FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A64E1CBD1FCBB4EB0036D0FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
