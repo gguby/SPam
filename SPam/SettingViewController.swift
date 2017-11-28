@@ -51,7 +51,7 @@ class SettingViewController : UIViewController , UITableViewDataSource, UITableV
             text = "How to use : Setting -> Messages -> Unknown & Spam -> Filter Unknown Sender On , SPam Switch On"
             break
         case 1 :
-            text = "mail to developer"
+            text = "Mail to developer"
             break
         case 2 :
             text = "Saving this number to your contacts is no longer classified as spam"
