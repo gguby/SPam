@@ -83,7 +83,7 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
                 let phoneNumber : NBPhoneNumber = try phoneUtil.parse(number.number!, defaultRegion: countryCode!)
                 print(phoneNumber.nationalNumber.stringValue)
                 
-                if (parseSender.range(of: phoneNumber.nationalNumber.stringValue) != nil){
+                if parseSender.hasPrefix(phoneNumber.nationalNumber.stringValue){
                     return .filter
                 }
             }

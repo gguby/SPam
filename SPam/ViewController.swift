@@ -12,7 +12,7 @@ import GoogleMobileAds
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var segmentControl: HBSegmentedControl!
     
     @IBOutlet weak var bannerView: GADBannerView!
     
@@ -27,16 +27,22 @@ class ViewController: UIViewController {
         self.bannerView.delegate = self
         self.bannerView.load(GADRequest())
         self.tableView.reloadData()
+        
+        self.segmentControl.items = ["Message", "Phone Number"]
+        segmentControl.font = UIFont(name: "Avenir-Black", size: 12)
+        segmentControl.borderColor = UIColor(white: 1.0, alpha: 0.3)
+        segmentControl.selectedIndex = 0
+        segmentControl.addTarget(self, action: #selector(ViewController.segmentValueChanged(_:)), for: .valueChanged)
     }
     
-    @IBAction func touchSeg(_ sender: UISegmentedControl) {
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         self.tableView.reloadData()
     }
     
     @IBAction func addSpam(_ sender: UIButton) {
         
         let msg : String!
-        if self.segmentControl.selectedSegmentIndex == 0 {
+        if self.segmentControl.selectedIndex == 0 {
             msg = "Add phrases to filter"
         }else {
             msg = "Add number to filter"
@@ -53,7 +59,7 @@ class ViewController: UIViewController {
             [weak alert] (_) in
                 let textfield = alert?.textFields![0]
             if let text = textfield?.text {
-                if self.segmentControl.selectedSegmentIndex == 0 {
+                if self.segmentControl.selectedIndex == 0 {
                     self.store.storeContent(title: text)
                 }else {
                     self.store.storeNumber(title: text)
@@ -62,6 +68,8 @@ class ViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
     }
@@ -75,7 +83,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       let index = self.segmentControl.selectedSegmentIndex
+       let index = self.segmentControl.selectedIndex
         
         if index == 0 {
             return store.contents.count
@@ -87,7 +95,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SpamCell
         
-        let idx = self.segmentControl.selectedSegmentIndex
+        let idx = self.segmentControl.selectedIndex
         
         var title : String!
         
@@ -109,7 +117,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            if self.segmentControl.selectedSegmentIndex == 0 {
+            if self.segmentControl.selectedIndex == 0 {
                 let obj = store.contents[indexPath.row]
                 self.store.delete(spam: obj)
             }else {
