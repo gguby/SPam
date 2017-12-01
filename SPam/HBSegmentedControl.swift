@@ -49,7 +49,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var font : UIFont! = UIFont.systemFont(ofSize: 12) {
+    @IBInspectable var font : UIFont! = UIFont(name: "AppleSDGothicNeo-SemiBold", size: 13.0) {
         didSet {
             setFont()
         }
@@ -70,7 +70,7 @@ import UIKit
         
         layer.cornerRadius = frame.height / 2
         layer.borderColor = UIColor(white: 0, alpha: 0.5).cgColor
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         
         backgroundColor = UIColor.clear
         
